@@ -15,6 +15,11 @@ const ConversionRate = (props: Props) => {
     const currentRate =
       Number(exchangeRateAUDtoUSD) * Number(exchangeRateUSDtoARS);
 
+    if (lastRate === 0) {
+      localStorage.setItem('lastRate', currentRate.toString());
+      return;
+    }
+
     if (currentRate > lastRate) {
       setTrend('up');
     } else if (currentRate < lastRate) {
@@ -45,7 +50,9 @@ const ConversionRate = (props: Props) => {
         )}{' '}
         ARS {renderTrendIcon()}
       </p>
-      <p className='text-xs'>Antes: 1 AUD = {lastRate.toFixed(2)} ARS</p>
+      {lastRate !== 0 && (
+        <p className='text-xs'>Antes: 1 AUD = {lastRate.toFixed(2)} ARS</p>
+      )}
     </>
   );
 };
