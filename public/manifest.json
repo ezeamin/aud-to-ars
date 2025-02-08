@@ -1,0 +1,22 @@
+{
+  "name": "AUD to ARS",
+  "short_name": "AUD to ARS",
+  "description": "Conversión entre AUD y ARS (MEP)",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1d293d",
+  "theme_color": "#1d293d",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
