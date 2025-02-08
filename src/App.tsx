@@ -24,24 +24,20 @@ const App = () => {
 
   if (!exchangeRateAUDtoUSD || !exchangeRateUSDtoARS) {
     return (
-      <main className='px-5 h-screen flex-col bg-slate-800 flex items-center justify-center'>
+      <main className='px-5 h-dvh flex-col bg-slate-800 flex items-center justify-center'>
         <h1 className='text-lg'>Cargando...</h1>
       </main>
     );
   }
 
   return (
-    <main className='px-6 h-screen flex-col bg-slate-800 flex items-center justify-center'>
+    <main className='px-6 h-dvh flex-col bg-slate-800 flex items-center justify-center'>
       <Converter
         exchangeRateAUDtoUSD={exchangeRateAUDtoUSD}
         exchangeRateUSDtoARS={exchangeRateUSDtoARS}
       />
-      <p className='text-sm mt-10 mb-1'>
-        Conversión: 1 AUD = {exchangeRateAUDtoUSD} USD
-      </p>
-      <p className='text-sm'>
-        Conversión: 1 USD = {exchangeRateUSDtoARS} ARS (MEP)
-      </p>
+      <p className='text-sm mt-10'>1 AUD = {exchangeRateAUDtoUSD} USD</p>
+      <p className='text-sm'>1 USD = {exchangeRateUSDtoARS} ARS (MEP)</p>
       <ConversionRate
         exchangeRateAUDtoUSD={exchangeRateAUDtoUSD}
         exchangeRateUSDtoARS={exchangeRateUSDtoARS}
