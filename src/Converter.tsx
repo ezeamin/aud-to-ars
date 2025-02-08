@@ -12,6 +12,12 @@ const Converter = (props: Props) => {
   const [usd, setUsd] = useState<number | string>('');
 
   useEffect(() => {
+    if (aud === '') {
+      setArs('');
+      setUsd('');
+      return;
+    }
+
     if (exchangeRateAUDtoUSD && exchangeRateUSDtoARS && aud !== '') {
       const usdValue = parseFloat(aud as string) * Number(exchangeRateAUDtoUSD);
       const convertedArs = usdValue * Number(exchangeRateUSDtoARS);
