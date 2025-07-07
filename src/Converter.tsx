@@ -34,7 +34,7 @@ const Converter = (props: Props) => {
   return (
     <form className='flex flex-col gap-4 text-center'>
       <label className='input input-xl w-full'>
-        <span className='label'>AUD 🇦🇺</span>
+        <span className='label'>EUR 🇪🇺</span>
         <input
           autoFocus
           type='number'
