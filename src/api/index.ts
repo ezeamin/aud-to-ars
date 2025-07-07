@@ -1,6 +1,6 @@
 export const getExchangeRateAUDtoUSD = async (): Promise<string> => {
   const response = await fetch(
-    'https://api.exchangerate-api.com/v4/latest/AUD'
+    'https://api.exchangerate-api.com/v4/latest/EUR'
   );
   const data = await response.json();
   return (data.rates.USD || 0).toFixed(2);
