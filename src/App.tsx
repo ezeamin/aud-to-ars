@@ -36,13 +36,13 @@ const App = () => {
         exchangeRateAUDtoUSD={exchangeRateAUDtoUSD}
         exchangeRateUSDtoARS={exchangeRateUSDtoARS}
       />
-      <p className='text-sm mt-10'>1 AUD = {exchangeRateAUDtoUSD} USD</p>
+      <p className='text-sm mt-10'>1 EUR = {exchangeRateAUDtoUSD} USD</p>
       <p className='text-sm'>1 USD = {exchangeRateUSDtoARS} ARS (MEP)</p>
       <ConversionRate
         exchangeRateAUDtoUSD={exchangeRateAUDtoUSD}
         exchangeRateUSDtoARS={exchangeRateUSDtoARS}
       />
-      <p className='absolute bottom-4 text-slate-400 text-sm right-0 left-0 w-full text-center'>
+      <p className='absolute bottom-5 text-slate-400 text-sm right-0 left-0 w-full text-center'>
         Hecho con ♥️ por Eze Amin
       </p>
     </main>
