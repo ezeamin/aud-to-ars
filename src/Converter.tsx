@@ -38,6 +38,7 @@ const Converter = (props: Props) => {
         <input
           autoFocus
           type='number'
+          inputmode='numeric'
           placeholder='xx.xx'
           value={aud}
           onChange={handleAudChange}
